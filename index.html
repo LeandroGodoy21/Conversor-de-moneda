@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cinzel:wght@400;500;600&family=Lobster&family=Oswald:wght@200&family=Poppins:ital,wght@0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" defer></script>
     <title>Conversor de moneda</title>
 </head>
 <body>
@@ -18,10 +19,10 @@
 
     <main>
         <div class="contenedor">
-            <form action="#">
+            <form action="#" id="formEntrada">
                 <div class="entradas">
                     <label for="importe">Importe</label>
-                    <input type="text" name="Importe" placeholder="Importe en dolares">
+                    <input type="text" name="Importe" id="import" placeholder="Importe en dolares">
                 </div>
                 <div class="entradas">
                     <label for="a">A que desea convertir?</label>
@@ -37,7 +38,7 @@
         </div>
     </main>
     <div id= resultado>
-        <p></p>
+        <p id="valor"></p>
     </div>
 
     <footer>
