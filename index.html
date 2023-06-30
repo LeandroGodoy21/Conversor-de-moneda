@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cinzel:wght@400;500;600&family=Lobster&family=Oswald:wght@200&family=Poppins:ital,wght@0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Conversor de moneda</title>
 </head>
 <body>
+
     <header>
         <img src="img/logo.png" alt="">
     </header>
+
     <main>
         <div class="contenedor">
             <form action="#">
-                <div>
+                <div class="entradas">
                     <label for="importe">Importe</label>
-                    <input type="text" name="Importe">
+                    <input type="text" name="Importe" placeholder="Importe en dolares">
                 </div>
-                <div>
+                <div class="entradas">
                     <label for="a">A que desea convertir?</label>
                     <select name="a" id="select">
                         <option value="0">EUR-Euro</option>
@@ -25,11 +31,18 @@
                         <option value="2">ARS-Peso argentino</option>
                     </select>
 
-                </div>
-                <input type="submit" value="Convertir">
+                </div class="entradas">
+                <input type="submit" value="Convertir" id="btn">
             </form>
         </div>
     </main>
+    <div id= resultado>
+        <p></p>
+    </div>
+
+    <footer>
+        Conversor para mastermind
+    </footer>
     
 </body>
 </html>
