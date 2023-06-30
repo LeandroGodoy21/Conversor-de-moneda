@@ -85,6 +85,10 @@ main .contenedor>form{
     margin: 0 auto;
     background-color: rgb(122, 186, 241);
 }
+
+.contenedor input[type='submit']:active{
+    box-shadow: 1px 1px 10px inset;
+}
 #resultado{
     display: block;
     width: 90%;
